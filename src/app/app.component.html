@@ -28,12 +28,14 @@
       <div class="alert alert-primary" appClass [pushSomeText]="'This is the custom directive'"></div>
       <div class='alert' [appClass]="{ 'alert-primary': currentPage === 0 }">This is the custom class directive</div>
       <hr>
-
+      <span *appTimes="5; let i = index;">{{ i + 1 }}- hello, </span>
+      <hr>
       <div [ngSwitch]="currentPage">
         <div *ngSwitchCase="0">Here we go ...</div>
         <div *ngSwitchCase="1">You are starting to visit my pages</div>
         <div *ngSwitchDefault>You are continue to visit my pages</div>
       </div>
+
 
       <h4>{{ photos[ currentPage ].title }}</h4>
       <img [src]="photos[ currentPage ].url" [alt]="photos[ currentPage ].title">

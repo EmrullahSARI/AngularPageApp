@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClassDirective } from './class.directive';
+import { TimesDirective } from './times.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClassDirective
+    ClassDirective,
+    TimesDirective
   ],
   imports: [
     BrowserModule,
